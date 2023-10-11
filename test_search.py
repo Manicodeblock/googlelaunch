@@ -5,14 +5,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver import ActionChains
 
-class smpl:
+class smpl():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     action = ActionChains(driver)
 
     def test_lgn(self):
         print("Login world wide test started")
-        time.sleep(1)
+        time.sleep(3)
         self.driver.get("https://www.saucedemo.com/")
+        time.sleep(3)
         self.driver.maximize_window()
         time.sleep(2)
         self.login("standard_user", "secret_sauce")
