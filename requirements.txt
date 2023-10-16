@@ -9,6 +9,5 @@ pytest-xdist==3.2.1
 requests==2.29.0
 responses==0.23.1
 selenium==4.9.0
-sshtunnel==0.4.0s
 webdriver-manager==3.8.6
 wheel==0.40.0
