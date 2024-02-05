@@ -9,6 +9,8 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 action = ActionChains(driver)
 
 driver.get("https://www.google.com/")
+time.sleep(4)
+print("Google launched successfully")
 currenturl = driver.current_url
 print("current url")
 print(currenturl)
